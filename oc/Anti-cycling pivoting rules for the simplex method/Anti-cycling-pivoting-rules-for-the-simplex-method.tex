@@ -1,0 +1,102 @@
+\documentclass{beamer}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{bibliography item}[text]
+
+\usepackage{beamerthemeshadow}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+\begin{document}
+\title{Anti-cycling pivoting rules for the simplex method}  
+\author{Coman Florin-Alexandru}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}\frametitle{Table of contents}\tableofcontents
+\end{frame}
+
+\section{Introduction}
+\subsection{Pivot Pool}
+\begin{frame}\frametitle{Pivot Pool}
+\begin{block}{}
+For LP problems with many variables, the use of a "pivot pool" often works well. This is how a pivot pool works. Periodically, the algorithm computes the reduced costs for all the variables, and among those with $\overline{c}_j < 0$ a subset of "best" variables are chosen. This subset is used in all further iterations of the simplex method until the pivot pool either becomes empty or grows too old. This allows the algorithm to choose entering variables quickly, but only considering a tuned subset of the entire set of variables.
+\end{block}
+\end{frame}
+
+\subsection{Degeneracy}
+\begin{frame}\frametitle{Degeneracy}
+\begin{block}{}
+Consider a linear programming problem input in standard form: $min(c^T x : x \geq 0, A x = b)$.
+\end{block}
+\begin{block}{Definition}
+A basic feasible solution, $x$, is \textbf{degenerate} if $\exists i$ such that $x_i = 0$ and $i$ is in the basis corresponding to $x$.
+\end{block}
+\end{frame}
+
+\begin{frame}\frametitle{Degeneracy}
+\begin{block}{Possible problems}
+1. If $x$ is degenerate and $i \in B$, s.t. $x_i = 0$, is chosen to leave the basis, then the objective function doesn’t change. \\
+2. Degeneracy can potentially cause cycling in the simplex method.
+\end{block}
+\end{frame}
+
+\subsection{Cycling}
+\begin{frame}\frametitle{Cycling}
+\begin{block}{Definition}
+A \textbf{cycle} in the simplex method is a sequence of $k + 1$ iterations with corresponding bases $B_0, ... , B_k$, $B_0$ and $k \geq 1$.
+\end{block}
+\begin{block}{Degenerate Pivoting}
+Pivot rules: \\
+1. Choose entering variable with largest reduced cost. \\
+2. Choose leaving variable with smallest subscript.
+\end{block}
+\end{frame}
+
+\section{Anty-cycling Methods}
+\subsection{Perturbation Method}
+\begin{frame}\frametitle{Anty-cycling Methods}
+\begin{block}{Perturbation Method}
+There are a couple of ways for avoiding cycling. One way is the "Perturbation Method". In this, we perturb the right-hand side $b$ by small amounts different for each $b_i$ . Then, $x_i \neq 0, \forall i \in B$ since $x_i$ will always have some linear combination of these small amounts.
+\end{block}
+\end{frame}
+
+\subsection{Bland's Rule}
+\begin{frame}\frametitle{Anty-cycling Methods}
+\begin{block}{Bland's Rule}
+Choose the entering basic variable $x_j$ such that $j$ is the smallest index with $\overline{c}_j < 0$. Also choose the leaving basic variable i with the smallest index (in case of ties in the ratio test).
+\end{block}
+\end{frame}
+
+\begin{frame}\frametitle{Bland's Rule}
+\begin{block}{Algorithm}
+\textbf{step 1.} Among all candidates for the entering column (i.e., those with $\widehat{c}_j < 0$), choose the one with the smallest index, say $s$. \\
+\textbf{step 2.}  Among all rows $i$ for which the minimum ratio test results in a tie, choose the row $r$ for which the corresponding basic variable has the smallest index, $j_r$.
+\end{block}
+\begin{block}{}
+Note that in step 2, the number $r$ itself need not be smallest row number among all those rows involved in a tie. It is the index of the associated basic variable that is the smallest among all such indices. Thus, with \\
+\centerline{$s = arg min \lbrace j : \widehat{c}_j < 0 \rbrace$}
+we define $r$ by the condition \\
+\centerline{$j_r = min \lbrace j_i : i \in arg min \lbrace \frac{\widehat{b}_i}{\widehat{a}_is} : \widehat{a}_is > 0 \rbrace \rbrace$.}
+\end{block}
+\end{frame}
+
+\begin{frame}{Anty-cycling Methods}
+\begin{block}{Termination with Bland's Rule}
+\textbf{Theorem 1.} If the simplex method uses Bland's rule, it terminates in finite time with optimal solution. (i.e. no cycling)
+\end{block}
+\begin{block}{Proof}
+Suppose the simplex method is implemented with Bland's rule and a cycle exists. Then there exist bases $B_0, ... ,B_k$, $B_0$ that form the cycle. Additionally, recall that the objective value and the current solution $x_*$ remain the same throughout the cycle. The solutions remain the same because $\widehat{x}_B = x_B - \widehat{A}(\epsilon e_j)$. Since $\epsilon = 0, \widehat{x}_B = x_B$.
+\end{block}
+\end{frame}
+
+\section{Bibliography}
+\begin{frame}[allowframebreaks]
+\frametitle{Bibliography}
+    \tiny{\bibliographystyle{abbrv} }
+    \bibliography{main}
+\end{frame}
+
+\end{document}
