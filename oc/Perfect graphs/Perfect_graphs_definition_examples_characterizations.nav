@@ -1,0 +1,48 @@
+\beamer@endinputifotherversion {3.36pt}
+\headcommand {\slideentry {0}{0}{1}{1/1}{}{0}}
+\headcommand {\beamer@framepages {1}{1}}
+\headcommand {\slideentry {0}{0}{2}{2/2}{}{0}}
+\headcommand {\beamer@framepages {2}{2}}
+\headcommand {\sectionentry {1}{Definitions}{3}{Definitions}{0}}
+\headcommand {\beamer@sectionpages {1}{2}}
+\headcommand {\beamer@subsectionpages {1}{2}}
+\headcommand {\beamer@subsectionentry {0}{1}{1}{3}{Perfect Graph}}\headcommand {\beamer@subsectionpages {3}{2}}
+\headcommand {\slideentry {1}{1}{1}{3/3}{Perfect Graph}{0}}
+\headcommand {\beamer@framepages {3}{3}}
+\headcommand {\beamer@subsectionentry {0}{1}{2}{4}{Weakly Perfect Graph}}\headcommand {\beamer@subsectionpages {3}{3}}
+\headcommand {\slideentry {1}{2}{1}{4/4}{Weakly Perfect Graph}{0}}
+\headcommand {\beamer@framepages {4}{4}}
+\headcommand {\beamer@subsectionentry {0}{1}{3}{5}{Strongly Perfect Graph}}\headcommand {\beamer@subsectionpages {4}{4}}
+\headcommand {\slideentry {1}{3}{1}{5/5}{Strongly Perfect Graph}{0}}
+\headcommand {\beamer@framepages {5}{5}}
+\headcommand {\sectionentry {2}{Classes of graphs that are perfect}{6}{Classes of graphs that are perfect}{0}}
+\headcommand {\beamer@sectionpages {3}{5}}
+\headcommand {\beamer@subsectionpages {5}{5}}
+\headcommand {\beamer@subsectionentry {0}{2}{1}{6}{Bipartite Graphs}}\headcommand {\beamer@subsectionpages {6}{5}}
+\headcommand {\slideentry {2}{1}{1}{6/6}{Bipartite Graphs}{0}}
+\headcommand {\beamer@framepages {6}{6}}
+\headcommand {\beamer@subsectionentry {0}{2}{2}{7}{Chordal Graphs}}\headcommand {\beamer@subsectionpages {6}{6}}
+\headcommand {\slideentry {2}{2}{1}{7/7}{Chordal Graphs}{0}}
+\headcommand {\beamer@framepages {7}{7}}
+\headcommand {\beamer@subsectionentry {0}{2}{3}{8}{Interval Graphs}}\headcommand {\beamer@subsectionpages {7}{7}}
+\headcommand {\slideentry {2}{3}{1}{8/8}{Interval Graphs}{0}}
+\headcommand {\beamer@framepages {8}{8}}
+\headcommand {\beamer@subsectionentry {0}{2}{4}{9}{Split Graphs}}\headcommand {\beamer@subsectionpages {8}{8}}
+\headcommand {\slideentry {2}{4}{1}{9/9}{Split Graphs}{0}}
+\headcommand {\beamer@framepages {9}{9}}
+\headcommand {\sectionentry {3}{Characterizations}{10}{Characterizations}{0}}
+\headcommand {\beamer@sectionpages {6}{9}}
+\headcommand {\beamer@subsectionpages {9}{9}}
+\headcommand {\beamer@subsectionentry {0}{3}{1}{10}{Strong Perfect Graph Theorem}}\headcommand {\beamer@subsectionpages {10}{9}}
+\headcommand {\slideentry {3}{1}{1}{10/10}{Strong Perfect Graph Theorem}{0}}
+\headcommand {\beamer@framepages {10}{10}}
+\headcommand {\sectionentry {4}{Bibliography}{11}{Bibliography}{0}}
+\headcommand {\beamer@sectionpages {10}{10}}
+\headcommand {\beamer@subsectionpages {10}{10}}
+\headcommand {\slideentry {4}{0}{2}{11/11}{}{0}}
+\headcommand {\beamer@framepages {11}{11}}
+\headcommand {\beamer@partpages {1}{11}}
+\headcommand {\beamer@subsectionpages {11}{11}}
+\headcommand {\beamer@sectionpages {11}{11}}
+\headcommand {\beamer@documentpages {11}}
+\headcommand {\def \inserttotalframenumber {11}}

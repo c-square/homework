@@ -1,0 +1,13 @@
+\beamer@endinputifotherversion {3.36pt}
+\beamer@sectionintoc {1}{Definitions}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Perfect Graph}{3}{0}{1}
+\beamer@subsectionintoc {1}{2}{Weakly Perfect Graph}{4}{0}{1}
+\beamer@subsectionintoc {1}{3}{Strongly Perfect Graph}{5}{0}{1}
+\beamer@sectionintoc {2}{Classes of graphs that are perfect}{6}{0}{2}
+\beamer@subsectionintoc {2}{1}{Bipartite Graphs}{6}{0}{2}
+\beamer@subsectionintoc {2}{2}{Chordal Graphs}{7}{0}{2}
+\beamer@subsectionintoc {2}{3}{Interval Graphs}{8}{0}{2}
+\beamer@subsectionintoc {2}{4}{Split Graphs}{9}{0}{2}
+\beamer@sectionintoc {3}{Characterizations}{10}{0}{3}
+\beamer@subsectionintoc {3}{1}{Strong Perfect Graph Theorem}{10}{0}{3}
+\beamer@sectionintoc {4}{Bibliography}{11}{0}{4}
