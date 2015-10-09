@@ -1,0 +1,9 @@
+\beamer@endinputifotherversion {3.36pt}
+\beamer@sectionintoc {1}{Definition}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Definition}{3}{0}{1}
+\beamer@sectionintoc {2}{Examples}{4}{0}{2}
+\beamer@subsectionintoc {2}{1}{Uniform Matroid}{4}{0}{2}
+\beamer@subsectionintoc {2}{2}{Partition Matroid}{5}{0}{2}
+\beamer@subsectionintoc {2}{3}{Linear Matroid}{6}{0}{2}
+\beamer@subsectionintoc {2}{4}{Graphic Matroid}{8}{0}{2}
+\beamer@sectionintoc {3}{Bibliography}{9}{0}{3}

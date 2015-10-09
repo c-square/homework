@@ -1,0 +1,89 @@
+\documentclass{beamer}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{bibliography item}[text]
+
+\usepackage{beamerthemeshadow}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+\begin{document}
+\title{Matroids: equivalent definitions, examples}  
+\author{Coman Florin-Alexandru}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}\frametitle{Table of contents}\tableofcontents
+\end{frame}
+
+\section{Definition}
+\subsection{Definition}
+\begin{frame}\frametitle{Matroids}
+\begin{block}{Definition - Matroid}
+A matroid $M = (S, \mathcal{I})$ is a finite ground set $S$ together with a collection of sets $\mathcal{I} \subseteq 2^S$, known as the independent sets, satisfying the following axioms: \\
+$(I_1)$ If $I \in \mathcal{I}$ and $J \subseteq I$ then $J \in \mathcal{I}.$ \\
+$(I_2)$ If $I, J \in \mathcal{I}$ and $|J| > |I|$, then there exists an element $z \in J  \backslash I$ such that $I \cup \lbrace z \rbrace \in \mathcal{I}$.
+\end{block}
+\end{frame}
+
+\section{Examples}
+\subsection{Uniform Matroid}
+\begin{frame}\frametitle{Uniform Matroid}
+\begin{block}{}
+One trivial example of a matroid $M = (E, \mathcal{I})$ is a \textbf{uniform matroid} in which \\
+\centerline{$\mathcal{I} = \lbrace X \subseteq E : |X| \leq k \rbrace$,}
+for a given $k$. It is usually denoted as $U_{k, n}$ where $|E| = n$. A base is any set of cardinality $k$ (unless $k > |E|$ in which case the only base is $|E|$). \\
+A \textbf{free matroid} is one in which all sets are independent; it is $U_{n, n}$.
+\end{block}
+\end{frame}
+
+\subsection{Partition Matroid}
+\begin{frame}\frametitle{Partition Matroid}
+\begin{block}{}
+Another example is the \textbf{partition matroid} in which $E$ is partitioned into (disjoint) sets $E_1, E_2, ..., E_l$ and \\
+\centerline{$\mathcal{I} = \lbrace X \subseteq E: |X \cap E_i| \leq k_i$ for all $i = 1, ..., l \rbrace$,}
+for some given parameters $k_1, ..., K_l$. As an exercise, let us check that $(I_2)$ is satisfied. If $X, Y \in \mathcal{I}$ and $|Y| > |X|$, there must exist $i$ such that $|Y \cap E_i| > |X \cap E_i|$ and this means that adding any element $e$ in $E_i \cap (Y \subseteq X)$ to $X$ will maintain independence.
+\end{block}
+\begin{block}{}
+Observe that $M$ would not be a matroid if the sets $E_i$ were not disjoint. For example, if $E_1 = \lbrace 1, 2 \rbrace$ and $E_2 = \lbrace 2, 3 \rbrace$ with $k_1 = 1$ and $k_2 = 1$ then both $Y = \lbrace 1, 3 \rbrace$ and $X = \lbrace 2 \rbrace$ have at most one element of each $E_i$, but one can't find an element of $Y$ to add to $X$.
+\end{block}
+\end{frame}
+
+\subsection{Linear Matroid}
+\begin{frame}\frametitle{Linear Matroid}
+\begin{block}{}
+\textbf{Linear matroids} (or representable matroids) are defined from a matrix $A$, and this is where the term matroid comes from. Let $E$ denote the index set of the columns of $A$. For a subset $X$ of $E$, let $A_X$ denote the submatrix of $A$ consisting only of those columns indexed by $X$. Now, define \\
+\centerline{$\mathcal{I} = \lbrace X \subseteq E: rank(A_X) = |X| \rbrace$,}
+i.e. a set $X$ is independent if the corresponding columns are linearly independent. A base $B$ corresponds to a linearly independent set of columns of cardinality $rank(A).$
+\end{block}
+\end{frame}
+
+\begin{frame}\frametitle{Matching Matroid}
+\begin{block}{}
+Here is an example of something that is not a matroid. Take a graph $G = (V, E)$, and let $\mathcal{I} = \lbrace F \subseteq E : F$ is a matching$\rbrace$. This is not a matroid since $(I_2)$ is not necessarily satisfied ($(I_1)$ is satisfied, however). Consider, for example, a graph on 4 vertices and let $X = \lbrace (2, 3) \rbrace$ and $Y = \lbrace (1, 2), (3, 4) \rbrace$. Both $X$ and $Y$ are matchings, but one cannot add an edge of $Y$ to $X$ and still have a matching.
+\end{block}
+\begin{block}{}
+There is, however, another matroid associated with matchings in a (general, not necessarily bipartite) graph $G = (V, E)$, but this time the ground set of $M$ corresponds to $V$ . In the \textbf{matching matroid}, $\mathcal{I} = \lbrace S \subseteq V : S$ is covered by some matching $M \rbrace$. In this definition, the matching does not need to cover precisely $S$; other vertices can be covered as well.
+\end{block}
+\end{frame}
+
+\subsection{Graphic Matroid}
+\begin{frame}\frametitle{Graphic Matroid}
+\begin{block}{}
+A very important class of matroids in combinatorial optimization is the class of \textbf{graphic matroids} (also called cycle matroids). Given a graph $G = (V, E)$, we define independent sets to be those subsets of edges which are forests, i.e. do not contain any cycles. This is called the graphic matroid $M = (E, \mathcal{I})$, or $M(G)$.
+\end{block}
+\begin{block}{}
+$(I_1)$ is clearly satisfied. To check $(I_2)$, first notice that if $F$ is a forest then the number of connected components of the graph $(V, F)$ is given by $K(V, F) = |V| − |F|$. Therefore, if $X$ and $Y$ are 2 forests and $|Y| > |X|$ then $K(V, Y) < K(V, X)$ and therefore there must exist an edge of $Y \subseteq X$ which connects two different connected components of $X$; adding this edge to $X$ results in a larger forest. This shows $(I_2)$.
+\end{block}
+\end{frame}
+
+\section{Bibliography}
+\begin{frame}[allowframebreaks]
+\frametitle{Bibliography}
+    \tiny{\bibliographystyle{abbrv} }
+    \bibliography{main}
+\end{frame}
+
+\end{document}
