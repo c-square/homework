@@ -1,6 +1,10 @@
 ```
 # FACULTATEA DE INFORMATICĂ, UNIVERSITATEA "AL. I. CUZA" IAȘI
-# Anul universitar 2015 - 2016
+# Mater - Optimizare computațională
 ```
 
 ##Capitole Speciale de Inteligenţă Artificială
+
+Cuprins:
+
+- [Tema 1](tema1)
