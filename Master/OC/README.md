@@ -1,6 +1,6 @@
 ```
 # FACULTATEA DE INFORMATICĂ, UNIVERSITATEA "AL. I. CUZA" IAȘI
-# Anul universitar 2014 - 2015
+# Master - Optimizare Computațională
 ```
 
 ##Optimizare combinatorică
