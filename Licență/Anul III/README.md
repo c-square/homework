@@ -40,3 +40,13 @@ Cuprins:
 - [Tema3](PBR/Tema3)
 - [Tema4](PBR/Tema4)
 - [Tema5](PBR/Tema5)
+
+
+##Capitole speciale de sisteme de operare(CSSO)
+
+Cuprins:
+
+- [Tema2](CSSO/Tema2)
+- [Tema3](CSSO/Tema3)
+- [Tema4](CSSO/Tema4)
+- [Tema5](CSSO/Tema5)
