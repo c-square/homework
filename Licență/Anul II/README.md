@@ -29,3 +29,9 @@ Cuprins:
 Cuprins:
 
 - [Proiect - Expression parser and evaluator](PF/proiect.hs)
+
+
+##[RO] Retele
+Cuprins:
+
+- [Traceroute](Retele/Traceroute)
