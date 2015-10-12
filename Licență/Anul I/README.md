@@ -7,10 +7,10 @@
 
 Cuprins:
 
-- [Agenda](Agenda)
-- [Biblioteca](Biblioteca)
-- [Expresii](Expresii)
-- [Multimi](Multimi)
-- [Nr.Complexe](Nr.Complexe)
-- [Poligon](Poligon)
-- [Shapes](Shapes)
+- [Agenda](POO/Agenda)
+- [Biblioteca](POO/Biblioteca)
+- [Expresii](POO/Expresii)
+- [Multimi](POO/Multimi)
+- [Nr.Complexe](POO/Nr.Complexe)
+- [Poligon](POO/Poligon)
+- [Shapes](POO/Shapes)
