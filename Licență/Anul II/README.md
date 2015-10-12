@@ -25,7 +25,7 @@ Cuprins:
 - [Viginere](Viginere)
 
 
-##[RO] Programare Functionala (PF)
+##[Programare Functionala(PF)](PF)
 Cuprins:
 
-- [Proiect - Expression parser and evaluator](proiect.hs)
+- [Proiect - Expression parser and evaluator](PF/proiect.hs)
