@@ -35,6 +35,8 @@ Cuprins:
 			- [sparse](Licență/Anul%20III/CN/sparse)
 		- [Grafică pe calculator](Licență/Anul%20III/GPC)
 		- [Securitatea informației](Licență/Anul%20III/SI/)
+			- [Station-to-Station Protocol & 3DES](Licență/Anul%20III/SI/Station-to-Station%20Protocol%20&%203DES)
+			- [AES](Licență/Anul%20III/SI/AES)
 - [Master](Master)
 	- [Optimizare combinatorică](Master/OC)
 	- [Capitole speciale de Inteligență Artificială](Master/CSIA/)
