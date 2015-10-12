@@ -26,6 +26,8 @@ Cuprins:
 			- [Viginere](Licență/Anul%20II/Criptografie/Viginere)
 		- [Programare Functionala(PF)](Licență/Anul%20II/PF)
 			- [Evaluator de expresii](Licență/Anul%20II/PF/proiect.hs)
+		- [Retele](Licență/Anul%20II/Retele)
+			- [Traceroute](Licență/Anul%20II/Retele/Traceroute)
 	- [Anul III](Licență/Anul%20III/)
 		- [Calcul numeric](Licență/Anul%20III/CN/)
 			- [fourussians](Licență/Anul%20III/CN/fourussians)
