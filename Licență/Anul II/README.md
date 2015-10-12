@@ -1,10 +1,31 @@
 ```
 # FACULTATEA DE INFORMATICĂ, UNIVERSITATEA "AL. I. CUZA" IAȘI
-Licență - Anul II
+# Anul universitar 2013 - 2014 - Licenta, ANUL II
 ```
 
-##Inteligență artificială
-
+##[Inteligență artificială](IA)
 Cuprins:
 
 - [Problema reginelor](regine.py)
+
+
+##[Limbaje formale si automate (LFA)](LFA)
+Cuprins:
+
+- [Acvila - C++ & HTML combined](Acvila)
+
+
+##[Criptografie](Criptografie)
+Cuprins:
+
+- [DES](DES)
+- [Digital Coin Bank](DigitalCoinBank)
+- [MD5](MD5)
+- [RSA](RSA)
+- [Viginere](Viginere)
+
+
+##[RO] Programare Functionala (PF)
+Cuprins:
+
+- [Proiect - Expression parser and evaluator](proiect.hs)
