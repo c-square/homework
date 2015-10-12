@@ -6,23 +6,23 @@
 ##[Inteligență artificială](IA)
 Cuprins:
 
-- [Problema reginelor](regine.py)
+- [Problema reginelor](IA/regine.py)
 
 
 ##[Limbaje formale si automate (LFA)](LFA)
 Cuprins:
 
-- [Acvila - C++ & HTML combined](Acvila)
+- [Acvila - C++ & HTML combined](LFA/Acvila)
 
 
 ##[Criptografie](Criptografie)
 Cuprins:
 
-- [DES](DES)
-- [Digital Coin Bank](DigitalCoinBank)
-- [MD5](MD5)
-- [RSA](RSA)
-- [Viginere](Viginere)
+- [DES](Criptografie/DES)
+- [Digital Coin Bank](Criptografie/DigitalCoinBank)
+- [MD5](Criptografie/MD5)
+- [RSA](Criptografie/RSA)
+- [Viginere](Criptografie/Viginere)
 
 
 ##[Programare Functionala(PF)](PF)
