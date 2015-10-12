@@ -1,6 +1,6 @@
 ```
 # FACULTATEA DE INFORMATICĂ, UNIVERSITATEA "AL. I. CUZA" IAȘI
-# Licență - Anul III
+# Anul universitar 2014 - 2015 - Licenta, ANUL III
 ```
 
 ##Calcul numeric
