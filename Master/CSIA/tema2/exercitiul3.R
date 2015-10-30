@@ -9,8 +9,8 @@ CLT <- function(n) {
     # Numărul de eșantioane n este parametrul funcției.
     # Funcția returneaza vectorul mediilor celor n eșantioane.
     medii <- c()
-    for (index in 1:n) {
-        esantion <- runif(n=10000, min=-10, max=10)
+    for (index in 1:10000) {
+        esantion <- runif(n=n, min=-10, max=10)
         medii[index] <- mean(esantion)
     }
     return(medii)
@@ -19,7 +19,7 @@ CLT <- function(n) {
 histograma <- function(image_name, n) {
     # Genereaza histograma pentru datele primite
     png(image_name, width=4, height=4, units="in", res=300)
-    hist(CLT(n), col=COLORS)
+    hist(CLT(n), col=COLORS, nclass=100)
     dev.off()
 }
 
