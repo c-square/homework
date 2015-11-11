@@ -37,4 +37,19 @@ coeficienti_regresie <- function(observatii) {
     return(list(coeficienti=coeficienti, intervale=intervalele_incredere))
 }
 
-coeficienti_regresie(genereaza_observatii(100, 3, 5, -200, 200, 1.5))
+plot_regresie <- function(image_name, m, a, b, xmin, xmax, sigma) {
+    pdf(image_name, width=4, height=4)
+    observatii <- genereaza_observatii(m, a, b, xmin, xmax, sigma)
+    data <- coeficienti_regresie(observatii)
+
+    plot(a + b * observatii$x)
+    plot(data$coeficienti[1] + data$coeficienti[2] * observatii$x)
+    dev.off()
+}
+
+plot_regresie("1.pdf", 100, 3, 5, -200, 200, 1.5)
+plot_regresie("2.pdf", 10, 3, 5, -5, 5, 1)
+plot_regresie("3.pdf", 10000, 3, 5, -5, 5, 1)
+plot_regresie("4.pdf", 10, 3, 5, 5, 5.2, 1)
+plot_regresie("5.pdf", 10000, 3, 5, 5, 5.2, 1)
+plot_regresie("6.pdf", 10, 3, 5, 5, 5.2, 0.01)
