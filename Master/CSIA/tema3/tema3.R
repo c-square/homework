@@ -1,3 +1,41 @@
+# The Uniform Distribution
+#
+#     These functions provide information about the uniform distribution
+#     on the interval from ‘min’ to ‘max’. 
+#     ‘runif’ generates random deviates.
+#
+# Usage:
+#
+#     runif(n, min = 0, max = 1)
+#
+# The Normal Distribution
+#
+#    Density, distribution function, quantile function and random
+#    generation for the normal distribution with mean equal to ‘mean’
+#    and standard deviation equal to ‘sd’.
+#
+# Usage:
+#
+#   rnorm(n, mean = 0, sd = 1)
+#
+
+genereaza_observatii <- function(m, a, b, xmin, xmax, sigma) {
+    # Generează m observații pentru un model de regresie simpla folosind
+    # formula: yi = a + bxi + Ei, i = 1, · · · , m.
+    # Mai multe informații aici: http://goo.gl/5DbT9Z pagina 12
+
+    # Valorile lui X sunt distribuite uniform in intervalul [xmin, xmax]
+    x <- runif(m, min=xmin, max=xmax)
+
+    # Distribuția erorilor este Ei ∼ N(0, sigma * sigma)
+    e <- rnorm(m, sd=sigma)
+
+    # yi = a + b * xi + Ei, i = 1, ...m
+    y <- a + b * x + e
+    
+    return(list(x=x,y=y))
+}
+
 # Fitting Linear Models
 # ---------------------
 # ‘lm’ is used to fit linear models.  It can be used to carry out
@@ -22,13 +60,6 @@
 # confint(object, parm, level = 0.95, ...)
 #
 
-genereaza_observatii <- function(m, a, b, xmin, xmax, sigma) {
-    x <- runif(m, xmin, xmax)
-    e <- rnorm(m, sigma)
-    y <- a + b * x + e
-    return(list(x=x,y=y))
-}
-
 coeficienti_regresie <- function(observatii) {
     model_liniar <- lm(formula=observatii$y~observatii$x)
     coeficienti <- coef(model_liniar)
@@ -38,12 +69,16 @@ coeficienti_regresie <- function(observatii) {
 }
 
 plot_regresie <- function(image_name, m, a, b, xmin, xmax, sigma) {
-    pdf(image_name, width=4, height=4)
+    pdf(image_name, width=10, height=10)
     observatii <- genereaza_observatii(m, a, b, xmin, xmax, sigma)
     data <- coeficienti_regresie(observatii)
+    coeficienti <- data$coeficienti
 
-    plot(a + b * observatii$x)
-    plot(data$coeficienti[1] + data$coeficienti[2] * observatii$x)
+    plot(observatii$x, observatii$y)
+    abline(a, b, col="red")
+    abline(coeficienti[1], coeficienti[2], col="blue")
+
+    title(main=image_name)
     dev.off()
 }
 
