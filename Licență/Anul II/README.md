@@ -9,12 +9,6 @@ Cuprins:
 - [Problema reginelor](IA/regine.py)
 
 
-##[Limbaje formale si automate (LFA)](LFA)
-Cuprins:
-
-- [Acvila - C++ & HTML combined](LFA/Acvila)
-
-
 ##[Criptografie](Criptografie)
 Cuprins:
 

@@ -16,8 +16,6 @@ Cuprins:
 			- [Shapes](Licență/Anul%20I/POO/Shapes)
 	- [Anul II](Licență/Anul%20II/)
 		- [Inteligență artificială](Licență/Anul%20II/IA)
-		- [Limbaje formale si automate (LFA)](Licență/Anul%20II/LFA)
-			- [Acvila - C++ & HTML combined](Licență/Anul%20II/LFA/Acvila)
 		- [Criptografie](Licență/Anul%20II/Criptografie)
 			- [DES](Licență/Anul%20II/Criptografie/DES)
 			- [Digital Coin Bank](Licență/Anul%20II/Criptografie/DigitalCoinBank)
